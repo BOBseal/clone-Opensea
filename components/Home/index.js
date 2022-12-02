@@ -6,7 +6,7 @@ import { MdVerified } from 'react-icons/md'
 import TopNavbarLayout from '../../layouts/TopNavbarLayout'
 import CollectionStats from './CollectionStats'
 import { collectionData } from '../../static/collections'
-// import Listings from './Listings'
+import Listings from './Listings'
 
 const style = {
   wrapper: `flex flex-col dark:bg-[#202226] relative flex flex-col`,
@@ -15,15 +15,15 @@ const style = {
   banner: `rounded-t-lg object-cover`,
   collectionInfoWrapper: `absolute inset-0 top-1/3 z-10 h-2/3 -translate-y-16`,
   collectionInfoContainer: `flex flex-col items-center space-y-4`,
-  collectionLogoContainer: `flex items-center justify-center rounded-full border-4 border-gray-100`,
+  collectionLogoContainer: `flex items-center justify-center rounded-full border-2 border-red-700`,
   collectionLogo: `rounded-full object-cover`,
-  collectionInfo: `flex flex-col items-center space-y-6`,
-  title: `text-4xl font-bold`,
-  creatorInfoContainer: `flex items-center space-x-1`,
-  creator: `text-sm font-medium text-gray-500`,
+  collectionInfo: `flex flex-col items-left space-y-1`,
+  title: `text-7xl font-bold text-[#000080] `,
+  creatorInfoContainer: `flex items-center justify-center space-x-1`,
+  creator: `text-sm font-medium text-[#3366cc]-500`,
   creatorName: `cursor-pointer text-blue-500`,
-  verified: `h-5 w-5 text-blue-500`,
-  descriptionContainer: `max-w-3xl py-2 px-10 text-center text-gray-500`,
+  verified: `h-5 w-5 text-red-700`,
+  descriptionContainer: `max-w-6xl py-5 px-16 text-center text-[#3366cc]-100`,
 }
 
 export default function Home() {
@@ -94,9 +94,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <Listings /> */}
+           <Listings /> 
         </div>
-      </TopNavbarLayout>
+     </TopNavbarLayout>
     </div>
   )
 }
